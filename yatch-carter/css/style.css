@@ -1833,6 +1833,120 @@ transform: rotate(10deg);
 }
 
 /* ===================================
+      Our team css
+  ==================================== */
+  .our-team{}
+  .our-team .our-team-carousel{}
+  .our-team .our-team-carousel .item{
+      cursor: pointer;
+  }
+  .our-team .our-team-carousel .item .member{
+      border: solid 1px #eee;
+      padding: 15px;
+  }
+  .our-team .our-team-carousel .item:hover .member{
+      border: solid 1px #2b7a78;
+  }
+  .our-team .our-team-carousel .item .member .member-img{
+      position: relative;
+      overflow: hidden;
+  }
+  .our-team .our-team-carousel .item .member .member-img img{
+      transition: .5s ease;
+  }
+
+  .our-team .our-team-carousel .item .member .member-img .overlay-img{
+      position: absolute;
+      left:0;
+      right: 0;
+      bottom: 0;
+      top:0;
+      z-index: 1;
+      background-color: rgba(0, 0, 0, 0.42);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      transition: .5s ease;
+  }
+  .our-team .our-team-carousel .item:hover .member .member-img  .overlay-img{
+      opacity: 1;
+  }
+  .our-team .our-team-carousel  .item .member .member-img  .overlay-img .overlay-content{
+      display: flex;
+  }
+  .our-team .our-team-carousel  .item .member .member-img  .overlay-img .overlay-content a{
+      height: 35px;
+      width: 35px;
+      border-radius: 50%;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: .5s ease;
+      text-decoration: none;
+      padding-top: 2px;
+  }
+  .our-team .our-team-carousel .item .member .member-img  .overlay-img .overlay-content a i{
+      font-size: 20px;
+      color: #fff;
+  }
+  .our-team .our-team-carousel .item .member .member-img  .overlay-img .overlay-content a:hover{
+      background-color: #2b7a78;
+  }
+  .our-team .our-team-carousel .item .member .member-img  .overlay-img .overlay-content a:hover i{
+      color: #FFFFFF;
+  }
+  .our-team .our-team-carousel .item .member .member-img  img{
+      width: 100%;
+  }
+  .our-team .our-team-carousel  .member .member-img  .product-detail{
+      padding:20px 10px;
+      margin-top: 0;
+  }
+  .our-team .our-team-carousel .member .member-img  .product-detail .product-name{
+      font-family: Poppins,sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      color: #2d2d2d;
+      display: block;
+      margin-bottom: 8px;
+      transition: .5s ease;
+  }
+  .our-team .our-team-carousel .item:hover .member .product-detail .product-name{
+      color: #2b7a78;
+  }
+  .our-team .our-team-carousel  .item .member .product-detail .product-cat{
+      font-family: Poppins,sans-serif;
+      font-weight: 200;
+      font-size: 14px;
+      color: #2d2d2d;
+      opacity: .8;
+      display: block;
+      margin-bottom: 8px;
+  }
+  .our-team .our-team-carousel  .item .member .product-detail .reviews{
+      margin-bottom: 0;
+      padding-left: 0;
+      display: block;
+  }
+  .our-team .our-team-carousel  .item .member .product-detail .reviews li{
+      display: inline-block;
+      list-style: none;
+  }
+  .our-team .our-team-carousel  .item .member .product-detail .reviews li i{
+      font-size: 18px;
+      color: #2d2d2d;
+  }
+  .our-team .our-team-carousel .item .member .product-detail .fly-line{
+     height: 2px;
+      width: 20%;
+      margin: auto;
+      margin-bottom: 8px;
+      display: block;
+      background-color: #EEEEEE;
+  }
+/* ===================================
       Blog css
   ==================================== */
 .blog-sec{
